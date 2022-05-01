@@ -3,7 +3,6 @@ import { ThemeProvider } from "styled-components";
 
 const theme = {
   font: {
-    family: ["Barlow Semi Condensed", "sans-serif"],
     weight: {
       semiBold: 600,
       bold: 700,
