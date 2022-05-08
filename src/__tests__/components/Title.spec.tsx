@@ -29,7 +29,7 @@ describe("Title Component", () => {
     wrapperComponent.remove();
   });
 
-  it("Should render SearchBar without errors", () => {
+  it("Should render Title without errors", () => {
     wrapper(wrapperComponent);
   });
 
