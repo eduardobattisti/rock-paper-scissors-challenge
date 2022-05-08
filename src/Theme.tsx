@@ -1,7 +1,7 @@
 import React from "react";
-import { ThemeProvider } from "styled-components";
+import { ThemeProvider, Theme as ITheme } from "styled-components";
 
-const theme = {
+const theme: ITheme = {
   font: {
     weight: {
       semiBold: 600,
@@ -14,6 +14,7 @@ const theme = {
     },
   },
   colors: {
+    white: "#fff",
     primary: {
       scissors: {
         from: "hsl(39, 89%, 49%)",
