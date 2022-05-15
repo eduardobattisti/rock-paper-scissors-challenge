@@ -35,6 +35,9 @@ describe("Title Component", () => {
     expect(baseElement?.tagName).toBe("H2");
   });
 
+  //TODO - Analyze the test needs.
+  // This is testing the framework or some implementation?
+
   it("Should render a H1, if an unavailable tag is passed", () => {
     const { container } = themeWrapper(
       <Title tag="a" fs="base" fw="semiBold" color="white">
