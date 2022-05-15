@@ -15,12 +15,13 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    "baseUrl": "./src",
+    "baseUrl": "./",
     "paths": {
-      "@components/*": ["components/*"],
-      "@images/*": ["assets/images/*"]
+      "@/*": ["./src/*"],
+      "@components/*": ["./src/components/*"],
+      "@images/*": ["./src/assets/images/*"]
     }
   },
-  "include": ["src", "./auto-imports.d.ts"],
+  "include": ["src", "./auto-imports.d.ts", "__tests__"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
