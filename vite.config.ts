@@ -9,13 +9,12 @@ export default defineConfig({
   plugins: [
     react(),
     AutoImport({
-      imports: "react",
+      imports: ["react", "vitest"],
+      dts: true,
     }),
   ],
   test: {
-    globals: true,
     environment: "jsdom",
-    setupFiles: "./setupTests.ts",
     silent: false,
   },
   resolve: {
