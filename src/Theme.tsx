@@ -12,6 +12,11 @@ const theme: ITheme = {
       base: "1rem",
       lg: "1.125rem",
     },
+    spacing: {
+      tiny: "1px",
+      small: "2px",
+      large: "3px",
+    },
   },
   colors: {
     white: "#fff",

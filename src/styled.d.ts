@@ -14,6 +14,11 @@ declare module "styled-components" {
         base: string;
         lg: string;
       };
+      spacing: {
+        tiny: string;
+        small: string;
+        large: string;
+      };
     };
     colors: {
       white: string;
