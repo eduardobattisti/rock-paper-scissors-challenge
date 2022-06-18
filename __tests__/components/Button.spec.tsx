@@ -8,7 +8,7 @@ describe("Button Component", () => {
 
   it("Should render Button without errors", () => {
     const wrapper = themeWrapper(
-      <Button var="solid" label="Test" onClick={vi.fn}>
+      <Button variant="solid" onClick={vi.fn}>
         Default Button
       </Button>
     );
@@ -17,31 +17,30 @@ describe("Button Component", () => {
 
   it("Should present the label text", () => {
     themeWrapper(
-      <Button var="solid" label="Test" onClick={vi.fn}>
+      <Button variant="solid" onClick={vi.fn}>
         Default Button
       </Button>
     );
 
-    const label = screen.getByText(/Test/i);
+    const label = screen.getByText(/Default Button/i);
 
     expect(label).toBeDefined();
-
   });
 
   it("Method is called when an event click happens", () => {
     const handleClick = vi.fn();
 
     themeWrapper(
-      <Button var="solid" label="Test" onClick={handleClick}>
+      <Button variant="solid" onClick={handleClick}>
         Default Button
       </Button>
     );
 
+    const getButton = screen.getByText(/Default Button/i);
 
-    fireEvent.click(screen.getByText(/Test/i));
-    fireEvent.click(screen.getByText(/Test/i));
-        
+    fireEvent.click(getButton);
+    fireEvent.click(getButton);
+
     expect(handleClick).toHaveBeenCalledTimes(2);
-  });  
-
+  });
 });
