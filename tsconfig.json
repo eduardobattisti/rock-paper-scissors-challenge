@@ -23,6 +23,6 @@
       "@images/*": ["./src/assets/images/*"]
     }
   },
-  "include": ["src", "./auto-imports.d.ts", "__tests__"],
+  "include": ["src", "./auto-imports.d.ts", "__tests__", "./src/styled.d.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

@@ -1,7 +1,7 @@
 import React from "react";
-import { ThemeProvider, Theme as ITheme } from "styled-components";
+import { ThemeProvider, DefaultTheme } from "styled-components";
 
-const theme: ITheme = {
+const theme: DefaultTheme = {
   font: {
     weight: {
       semiBold: 600,

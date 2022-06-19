@@ -3,7 +3,7 @@ import "styled-components";
 
 // and extend them!
 declare module "styled-components" {
-  export interface Theme {
+  export interface DefaultTheme {
     font: {
       weight: {
         semiBold: number;
