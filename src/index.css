@@ -8,7 +8,9 @@
 }
 
 body {
-  /* background-color: #000; */
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient(ellipse at top, rgba(31,55,86,1) 20%, rgba(20,21,57,1) 80%);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
