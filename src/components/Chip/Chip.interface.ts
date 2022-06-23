@@ -1,7 +1,7 @@
 export const ChipTypes = {
   ROCK: "rock",
   PAPER: "paper",
-  SCISSOR: "scissor",
+  SCISSOR: "scissors",
 } as const;
 
 type ChipTypesEnum = typeof ChipTypes[keyof typeof ChipTypes];
