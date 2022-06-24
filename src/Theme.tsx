@@ -11,6 +11,7 @@ const theme: DefaultTheme = {
       tiny: ".875rem",
       base: "1rem",
       lg: "1.125rem",
+      xl: "4rem",
     },
     spacing: {
       tiny: "1px",

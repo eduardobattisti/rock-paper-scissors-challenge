@@ -13,6 +13,7 @@ declare module "styled-components" {
         tiny: string;
         base: string;
         lg: string;
+        xl: string;
       };
       spacing: {
         tiny: string;
